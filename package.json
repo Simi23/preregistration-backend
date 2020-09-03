@@ -11,7 +11,7 @@
     "url": "git+https://github.com/Simi23/preregistration-backend.git"
   },
   "author": "Simi23",
-  "license": "GNU GPL v3.0",
+  "license": "GPL-3.0-only",
   "bugs": {
     "url": "https://github.com/Simi23/preregistration-backend/issues"
   },
