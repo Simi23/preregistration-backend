@@ -1,0 +1,19 @@
+{
+  "name": "preregistration-backend",
+  "version": "1.0.0",
+  "description": "This program allows you to host a preregistration site for your event in order to make check-ins easier and faster.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Simi23/preregistration-backend.git"
+  },
+  "author": "Simi23",
+  "license": "GNU GPL v3.0",
+  "bugs": {
+    "url": "https://github.com/Simi23/preregistration-backend/issues"
+  },
+  "homepage": "https://github.com/Simi23/preregistration-backend"
+}
