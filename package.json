@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Simi23/preregistration-backend/issues"
   },
-  "homepage": "https://github.com/Simi23/preregistration-backend"
+  "homepage": "https://github.com/Simi23/preregistration-backend",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
