@@ -4,13 +4,13 @@ module.exports = {
 
 const Config = {
     
-    // Property: <name> <friendlyName> <type> [pattern]
+    // Property: <name: string> <friendlyName: string> <type: string> [pattern: RegExp] [sanitize: boolean]
     properties = [
         {
             name: "name",
             friendlyName: "Név",
             type: "string",
-            sanitize: ""
+            sanitize: true
         },
         {
             name: "email",
