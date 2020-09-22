@@ -1,22 +1,15 @@
 const fs = require('fs')
 
-module.exports = {
-    readFile,
-    writeFile,
-    readJSON,
-    writeJSON
-}
-
 function readFile(path) {
-    return new Promise((resolve, reject), () => {
+    return new Promise(async (resolve, reject) => {
         fs.readFile(path, (err, file) => {
-            resolve(file)
+            resolve(file.toString())
         })
     })
 }
 
 function writeFile(path, file) {
-    return new Promise((resolve, reject), () => {
+    return new Promise(async (resolve, reject) => {
         fs.writeFile(path, file, err => {
             resolve(true)
         })
@@ -24,13 +17,22 @@ function writeFile(path, file) {
 }
 
 function readJSON(path) {
-    return new Promise((resolve, reject), () => {
-        resolve(JSON.parse(await readFile(path)))
+    return new Promise(async (resolve, reject) => {
+        let file = await readFile(path)
+        resolve(JSON.parse(file))
     })
 }
 
 function writeJSON(path, data) {
-    return new Promise((resolve, reject), () => {
-        resolve(await writeFile(path, JSON.stringify(data)))
+    return new Promise(async (resolve, reject) => {
+        let file = await writeFile(path, JSON.stringify(data))
+        resolve(file)
     })
+}
+
+module.exports = {
+    readFile,
+    writeFile,
+    readJSON,
+    writeJSON
 }
