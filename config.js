@@ -1,11 +1,8 @@
-module.exports = {
-    Config
-}
-
 const Config = {
     
     // Property: <name: string> <friendlyName: string> <type: string> [pattern: RegExp] [sanitize: boolean]
-    properties = [
+    // Important! `id` & `date` are reserved for storing additional information.
+    properties: [
         {
             name: "name",
             friendlyName: "Név",
@@ -21,3 +18,5 @@ const Config = {
     ]
 
 }
+
+module.exports = Config
